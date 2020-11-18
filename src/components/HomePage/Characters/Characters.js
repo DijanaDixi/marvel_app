@@ -32,11 +32,8 @@ function Characters() {
 
   // All Characters
   const getAllCharacters = () => {
-    // md5(ts + privKey + pubKey)
-    // URL?ts=val&apikey=key&hash=md5Hash
-
     fetch(
-      `http://gateway.marvel.com/v1/public/characters?ts=thesoer&apikey=6e5060e01c4b7ee2a016ffcd5079b468&hash=487fdf44d9cc6e059dae4d062cf419e2`
+      `https://gateway.marvel.com/v1/public/characters?ts=thesoer&apikey=6e5060e01c4b7ee2a016ffcd5079b468&hash=487fdf44d9cc6e059dae4d062cf419e2`
     )
       .then((response) => response.json())
       .then((res) => {
@@ -48,7 +45,7 @@ function Characters() {
   const getSearchData = (val) => {
     if (val.length > 0) {
       fetch(
-        `http://gateway.marvel.com/v1/public/characters?nameStartsWith=${val}&ts=thesoer&apikey=6e5060e01c4b7ee2a016ffcd5079b468&hash=487fdf44d9cc6e059dae4d062cf419e2`
+        `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${val}&ts=thesoer&apikey=6e5060e01c4b7ee2a016ffcd5079b468&hash=487fdf44d9cc6e059dae4d062cf419e2`
       )
         .then((response) => response.json())
         .then((res) => {
