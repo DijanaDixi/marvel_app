@@ -1,0 +1,31 @@
+.cardItem {
+    height: 230px;
+    margin-top: 23px;
+    background-color: ivory;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bodyCard {
+    height: 230px;
+    line-height: 0.9;
+
+}
+
+.marvalImage {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+}
+
+.bgc {
+    background-color: rgb(241, 21, 31) !important;
+}
+
+.bookmark {
+    cursor: grab;
+    position: absolute;
+    bottom: 4;
+    right: 22;
+    font-size: 25px;
+
+}

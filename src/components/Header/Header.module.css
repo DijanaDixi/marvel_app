@@ -1,0 +1,29 @@
+.header {
+    background: url("./image/dc7tvw7-16e58146-6993-462e-9886-ed716b1e030b.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.FontAwesomeIcon {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+      .header{
+        background-size: 100% 100%;
+      }
+ }

@@ -1,0 +1,17 @@
+.nav {
+  background-color: rgb(241, 21, 31);
+  font-size: 25px;
+
+}
+
+.nav a {
+  font-size: 25px;
+}
+
+.form-inline .form-control {
+  width: 70%;
+}
+
+.marginBlock {
+  margin-block-end: 0;
+}
