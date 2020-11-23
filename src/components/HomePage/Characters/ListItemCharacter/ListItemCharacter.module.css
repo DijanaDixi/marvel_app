@@ -27,7 +27,7 @@
 .bookmark {
     cursor: grab;
     position: absolute;
-    bottom: 6;
-    right: 18;
+    bottom: 0;
+    right: 15;
     font-size: 23px;
 }

@@ -30,10 +30,10 @@ function ListItemCharacter({ char, favorite, bookmark }) {
           </div>
 
           <div className="col-6 col-lg-8">
-            <div className='card-body p-0'>
-              <h5 className="card-title mb-4 pt-4">{char.name}</h5>
+            <div className='card-body p-0 mt-2'>
+              <h5 className="card-title ">{char.name}</h5>
               <div>
-                <p className={style.overflow}>Comics</p>
+                <h5 className={style.overflow}>Comics</h5>
                 {comics.splice(0, 3).map((c) => {
                   return <p key={c.id}>{c?.name || "- -"}</p>;
                 })}
