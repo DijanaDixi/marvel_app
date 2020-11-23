@@ -23,7 +23,7 @@ function ListItemCharacter({ char, favorite, bookmark }) {
         <div className="row">
           <div className={`col-6 col-lg-4 ${style.imageHolder}`}>
             <img
-              className={`rounded-circle ${style.marvelImage} img-fluid`}
+              className={` ${style.marvelImage}`}
               alt="..."
               src={`${char.thumbnail.path}.${char?.thumbnail?.extension}`}
             />

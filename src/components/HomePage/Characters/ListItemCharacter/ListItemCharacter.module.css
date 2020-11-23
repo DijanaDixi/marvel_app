@@ -11,17 +11,17 @@
 }
 
 .imageHolder {
-    background-color: rgb(241, 21, 31) !important;
     height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 0!important;
 }
 
 .marvelImage {
-    height: 75%;
-    width: 75%;
+    height: 260px;
+   width: 100%;
 }
 
 .bookmark {
