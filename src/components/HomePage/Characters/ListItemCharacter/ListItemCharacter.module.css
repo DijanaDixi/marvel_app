@@ -1,31 +1,33 @@
-.cardItem {
-    height: 230px;
-    margin-top: 23px;
-    background-color: ivory;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .bodyCard {
-    height: 230px;
-    line-height: 0.9;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: ivory;
+    margin-top: 15px;
+    box-sizing: border-box;
+    height: 260px;
+    line-height: normal;
+}
+.overflow {
+    overflow: hidden;
 }
 
-.marvalImage {
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-}
-
-.bgc {
+.imageHolder {
     background-color: rgb(241, 21, 31) !important;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.marvelImage {
+    height: 75%;
+    width: 75%;
 }
 
 .bookmark {
     cursor: grab;
     position: absolute;
-    bottom: 4;
-    right: 22;
-    font-size: 25px;
-
+    bottom: 6;
+    right: 18;
+    font-size: 23px;
 }

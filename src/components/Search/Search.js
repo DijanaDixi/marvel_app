@@ -10,7 +10,7 @@ function Search({ getSearchData, showFavorite }) {
     <>
       <nav className={`navbar navbar-light justify-content-between ${style.nav}`}>
         <div className="container">
-          <a className="navbar-brand text-white ">Hero Search</a>
+          <a href="/"className="navbar-brand text-white ">Hero Search</a>
           <a
             href="/"
             className="text-white"

@@ -19,22 +19,21 @@ function ListItemCharacter({ char, favorite, bookmark }) {
 
   const comics = getNestedObject(char, ["comics", "items"]);
   return (
-    <div className="col-sm-12">
-      <div className={style.cardItem}>
-        <div className="row ">
-          <div className={`col-6 col-lg-4 text-center ${style.bgc}`}>
+    <div className={`col-sm-12 ${style.bodyCard}`}>
+        <div className="row">
+          <div className={`col-6 col-lg-4 ${style.imageHolder}`}>
             <img
-              className={`rounded-circle ${style.marvalImage}`}
+              className={`rounded-circle ${style.marvelImage} img-fluid`}
               alt="..."
               src={`${char.thumbnail.path}.${char?.thumbnail?.extension}`}
             />
           </div>
 
           <div className="col-6 col-lg-8">
-            <div className={`card-body ${style.bodyCard}`}>
-              <h5 className="card-title mb-4">{char.name}</h5>
+            <div className='card-body p-0'>
+              <h5 className="card-title mb-4 pt-4">{char.name}</h5>
               <div>
-                <p className="">Comics</p>
+                <p className={style.overflow}>Comics</p>
                 {comics.splice(0, 3).map((c) => {
                   return <p key={c.id}>{c?.name || "- -"}</p>;
                 })}
@@ -58,7 +57,7 @@ function ListItemCharacter({ char, favorite, bookmark }) {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 
