@@ -26,7 +26,8 @@ function Character({ char, bookmark, favorite }) {
     );
   };
   // comics details
-  const comics = getNestedObject(char, ["comics", "items"]);
+  const getComics = getNestedObject(char, ["comics", "items"]);
+  const comics=getComics.slice(0,3)
 
   return (
     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
@@ -69,7 +70,7 @@ function Character({ char, bookmark, favorite }) {
           <div className={style.flipCardBack}>
             <div>
               <p className="text-center text-uppercase font-italic">Comics</p>
-              {comics.splice(0, 4).map((c) => {
+              {comics?.map((c) => {
                 return <p key={c.id}>{c.name || "- -"}</p>;
               })}
             </div>

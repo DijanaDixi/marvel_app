@@ -17,7 +17,8 @@ function ListItemCharacter({ char, favorite, bookmark }) {
     );
   };
 
-  const comics = getNestedObject(char, ["comics", "items"]);
+  const getComics = getNestedObject(char, ["comics", "items"]);
+  const comics=getComics.slice(0,3)
   return (
     <div className={`col-sm-12 ${style.bodyCard}`}>
         <div className="row">
@@ -34,7 +35,7 @@ function ListItemCharacter({ char, favorite, bookmark }) {
               <h5 className="card-title ">{char.name}</h5>
               <div>
                 <h5 className={style.overflow}>Comics</h5>
-                {comics.splice(0, 3).map((c) => {
+                {comics?.map((c) => {
                   return <p key={c.id}>{c?.name || "- -"}</p>;
                 })}
               </div>
